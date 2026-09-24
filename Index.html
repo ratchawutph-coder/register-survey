@@ -1,0 +1,3103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ขอสำรวจความประสงค์จะร่วมงาน: จัดงานเลี้ยงสังสรรค์ & ร่วมเดินทางไปส่งฝ่ายที่ ปข.1 | ส่วน ทข.ปข.10</title>
+  <!-- Google Fonts: Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --secondary: #059669;
+      --secondary-dark: #047857;
+      --bg-gradient: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+      --card-bg: rgba(255, 255, 255, 0.96);
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      --shadow-hover: 0 25px 35px -5px rgba(0, 0, 0, 0.12), 0 12px 14px -6px rgba(0, 0, 0, 0.08);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Prompt', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: var(--bg-gradient);
+      min-height: 100vh;
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .badge-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border: 1px solid #bfdbfe;
+      margin-bottom: 12px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Header & Gradient Typography */
+    header {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .header-title-gradient {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 0;
+    }
+
+    .title-primary {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 45%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.25;
+      display: inline-block;
+    }
+
+    .title-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+
+    .event-part-1 {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-color: #eff6ff;
+      border: 1px solid #bfdbfe;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .event-part-1 i {
+      color: #2563eb;
+      -webkit-text-fill-color: #2563eb;
+      font-size: 0.95rem;
+    }
+
+    .event-and {
+      color: #64748b;
+      font-size: 0.92rem;
+      font-weight: 500;
+      padding: 0 4px;
+    }
+
+    .event-part-2 {
+      background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-color: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      box-shadow: 0 2px 8px rgba(5, 150, 105, 0.08);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .event-part-2 i {
+      color: #059669;
+      -webkit-text-fill-color: #059669;
+      font-size: 0.95rem;
+    }
+
+    /* Header Explanation Card */
+    .header-desc-card {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      border: 1.5px solid #cbd5e1;
+      border-left: 5px solid #2563eb;
+      border-radius: 16px;
+      padding: 18px 24px;
+      margin-top: 22px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      text-align: left;
+      position: relative;
+    }
+
+    .desc-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+      color: #2563eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      box-shadow: 0 2px 6px rgba(37, 99, 235, 0.15);
+      margin-top: 2px;
+    }
+
+    .desc-card-content {
+      flex: 1;
+    }
+
+    .desc-card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .desc-card-text {
+      font-size: 0.96rem;
+      line-height: 1.8;
+      color: #334155;
+      margin: 0;
+      text-align: justify;
+    }
+
+    .desc-card-text strong {
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    @media (max-width: 640px) {
+      .header-desc-card {
+        padding: 14px 16px;
+        gap: 12px;
+        margin-top: 16px;
+        margin-bottom: 18px;
+      }
+      .desc-card-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+      }
+      .desc-card-title {
+        font-size: 1rem;
+      }
+      .desc-card-text {
+        font-size: 0.88rem;
+        line-height: 1.65;
+        text-align: left;
+      }
+    }
+
+    /* Overall Summary Bar (Clickable Stat Pills) */
+    .summary-overview {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .stat-pill {
+      background: white;
+      border-radius: var(--radius-md);
+      padding: 16px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+      border: 1.5px solid var(--border-color);
+      transition: var(--transition);
+      cursor: pointer;
+      position: relative;
+      user-select: none;
+    }
+
+    .stat-pill:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .stat-pill.pill-23 {
+      border-left: 6px solid #2563eb;
+    }
+
+    .stat-pill.pill-23:hover {
+      border-color: #93c5fd;
+      border-left-color: #2563eb;
+    }
+
+    .stat-pill.pill-30 {
+      border-left: 6px solid #10b981;
+    }
+
+    .stat-pill.pill-30:hover {
+      border-color: #a7f3d0;
+      border-left-color: #10b981;
+    }
+
+    .stat-pill .info h4 {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .stat-pill .info .stat-number {
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.2;
+      margin-top: 2px;
+    }
+
+    .pill-click-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.72rem;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin-top: 6px;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .stat-pill:hover .pill-click-hint {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    .stat-pill .icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      transition: var(--transition);
+    }
+
+    .pill-23 .icon-box {
+      background: #eff6ff;
+      color: #2563eb;
+    }
+
+    .stat-pill.pill-23:hover .icon-box {
+      background: #2563eb;
+      color: white;
+    }
+
+    .pill-30 .icon-box {
+      background: #ecfdf5;
+      color: #059669;
+    }
+
+    .stat-pill.pill-30:hover .icon-box {
+      background: #059669;
+      color: white;
+    }
+
+    /* ==================== Single Office Card (จุดกรอกรหัสที่ทำการจุดเดียว) ==================== */
+    .global-office-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      border: 2px solid #cbd5e1;
+      padding: 24px 28px;
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 26px;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .global-office-card:focus-within {
+      border-color: #3b82f6;
+      box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.15);
+    }
+
+    .office-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .office-card-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .office-card-title .step-badge {
+      background: #1e293b;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .office-input-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 768px) {
+      .office-input-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .input-icon {
+      position: absolute;
+      left: 16px;
+      color: #64748b;
+      font-size: 1.1rem;
+      pointer-events: none;
+    }
+
+    .form-control-office {
+      width: 100%;
+      padding: 14px 16px 14px 48px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #0f172a;
+      background: #f8fafc;
+      transition: var(--transition);
+      outline: none;
+    }
+
+    .form-control-office:focus {
+      background: white;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+    }
+
+    /* Result Box ในการ์ดส่วนกลาง */
+    .office-status-box {
+      border-radius: 12px;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: var(--transition);
+      background: #f8fafc;
+      color: var(--text-muted);
+      border: 1.5px dashed #cbd5e1;
+    }
+
+    .office-status-box.matched {
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1.5px solid #34d399;
+      box-shadow: 0 2px 6px rgba(5, 150, 105, 0.08);
+    }
+
+    .office-status-box.not-found {
+      background: #fef2f2;
+      color: #991b1b;
+      border: 1.5px solid #f87171;
+    }
+
+    .office-status-box i {
+      font-size: 1.4rem;
+    }
+
+    .status-text-title {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      opacity: 0.85;
+      display: block;
+    }
+
+    .status-text-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      display: block;
+      line-height: 1.3;
+    }
+
+    /* Cards Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 28px;
+      margin-bottom: 30px;
+    }
+
+    /* Survey Card Design */
+    .survey-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .survey-card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-4px);
+    }
+
+    /* Card Themes */
+    .card-day-23 .card-header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      color: white;
+    }
+
+    .card-day-30 .card-header {
+      background: linear-gradient(135deg, #064e3b 0%, #059669 100%);
+      color: white;
+    }
+
+    .card-header {
+      padding: 22px 24px;
+      position: relative;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .date-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      margin-bottom: 8px;
+    }
+
+    .card-header h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .card-header p {
+      font-size: 0.85rem;
+      opacity: 0.9;
+      margin-top: 4px;
+    }
+
+    .day-number-circle {
+      min-width: 66px;
+      height: 60px;
+      padding: 4px 8px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.45rem;
+      line-height: 1;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .day-number-circle span {
+      font-size: 0.72rem;
+      font-weight: 500;
+      opacity: 0.95;
+      margin-top: 3px;
+    }
+
+    .card-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    /* Linked Office Display inside Card */
+    .card-linked-office {
+      background: #f1f5f9;
+      border-radius: 10px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: #334155;
+      border: 1px solid #e2e8f0;
+    }
+
+    .card-linked-office i {
+      color: #2563eb;
+      font-size: 1.05rem;
+    }
+
+    .card-day-30 .card-linked-office i {
+      color: #059669;
+    }
+
+    .card-linked-office strong {
+      color: #0f172a;
+    }
+
+    .existing-info-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.72rem;
+      color: #d97706;
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    /* ==================== Locked State for Survey Cards ==================== */
+    .card-locked .form-interactive-area {
+      opacity: 0.38;
+      pointer-events: none;
+      filter: grayscale(35%);
+      user-select: none;
+      cursor: not-allowed;
+      transition: opacity 0.3s ease, filter 0.3s ease;
+    }
+
+    .card-lock-banner {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff1f2;
+      border: 1.5px dashed #fda4af;
+      color: #9f1239;
+      padding: 12px 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: var(--transition);
+      animation: pulseLockBanner 2.5s infinite ease-in-out;
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
+    .card-lock-banner:hover {
+      background: #ffe4e6;
+      border-color: #f43f5e;
+      transform: translateY(-1px);
+    }
+
+    .lock-icon-circle {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #f43f5e;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(244, 63, 94, 0.3);
+    }
+
+    .lock-banner-text {
+      flex: 1;
+      text-align: left;
+    }
+
+    .lock-banner-text strong {
+      display: block;
+      font-size: 0.95rem;
+      color: #881337;
+      font-weight: 700;
+    }
+
+    .lock-banner-text span {
+      display: block;
+      font-size: 0.8rem;
+      color: #9f1239;
+      opacity: 0.9;
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    .lock-arrow-icon {
+      font-size: 0.85rem;
+      color: #f43f5e;
+      opacity: 0.7;
+    }
+
+    @keyframes pulseLockBanner {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.2); }
+      50% { box-shadow: 0 0 0 6px rgba(244, 63, 94, 0); }
+    }
+
+    @keyframes highlightOfficePulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.5); }
+      50% { transform: scale(1.015); box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); border-color: #2563eb; }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+    }
+
+    .highlight-pulse {
+      animation: highlightOfficePulse 0.8s ease-in-out;
+      border-color: #2563eb !important;
+    }
+
+    .save-both-container.card-locked {
+      opacity: 0.45;
+      pointer-events: none;
+    }
+
+    /* Form Inputs */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-label {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .required-star {
+      color: #ef4444;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--border-color);
+      border-radius: 12px;
+      font-size: 0.98rem;
+      color: var(--text-main);
+      background: #f8fafc;
+      transition: var(--transition);
+      outline: none;
+    }
+
+    .form-control:focus {
+      background: white;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+    }
+
+    .card-day-30 .form-control:focus {
+      border-color: #10b981;
+      box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+    }
+
+    /* Counter / Stepper for People Count */
+    .counter-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .counter-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      border: 1.5px solid var(--border-color);
+      background: white;
+      color: #334155;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .counter-btn:hover {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+      color: #0f172a;
+    }
+
+    .counter-btn:active {
+      transform: scale(0.95);
+    }
+
+    .counter-input {
+      text-align: center;
+      font-size: 1.35rem;
+      font-weight: 700;
+      padding: 10px !important;
+      max-width: 140px;
+    }
+
+    .quick-chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+
+    .quick-chip {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: #475569;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .quick-chip:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    /* Travel Choice Cards (หมายเหตุ วันที่ 30) */
+    .travel-choices-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: var(--transition);
+      border-radius: 14px;
+    }
+
+    @keyframes shakeTravel {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-6px); }
+      40%, 80% { transform: translateX(6px); }
+    }
+
+    .travel-choices-grid.has-error {
+      border: 2px solid #ef4444;
+      background: #fef2f2;
+      padding: 8px;
+      animation: shakeTravel 0.4s ease-in-out;
+    }
+
+    .travel-choice-card {
+      border: 1.5px solid var(--border-color);
+      border-radius: 12px;
+      padding: 11px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      background: #f8fafc;
+      transition: var(--transition);
+      user-select: none;
+      font-size: 0.88rem;
+    }
+
+    .travel-choice-card:hover {
+      background: #ecfdf5;
+      border-color: #6ee7b7;
+    }
+
+    .travel-choice-card.active {
+      background: #ecfdf5;
+      border-color: #059669;
+      box-shadow: 0 3px 10px rgba(5, 150, 105, 0.12);
+    }
+
+    .travel-choice-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+      color: #1e293b;
+    }
+
+    .travel-choice-card.active .travel-choice-content {
+      color: #047857;
+      font-weight: 600;
+    }
+
+    .travel-choice-content i {
+      font-size: 1.15rem;
+      color: #64748b;
+      transition: var(--transition);
+    }
+
+    .travel-choice-card.active .travel-choice-content i {
+      color: #059669;
+    }
+
+    .travel-check-icon {
+      font-size: 1.15rem;
+      color: #cbd5e1;
+      transition: var(--transition);
+    }
+
+    .travel-choice-card.active .travel-check-icon {
+      color: #059669;
+    }
+
+    /* Submit Button */
+    .btn-submit {
+      width: 100%;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 14px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: white;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+      transition: var(--transition);
+      margin-top: 4px;
+    }
+
+    .card-day-23 .btn-submit {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    }
+
+    .card-day-23 .btn-submit:hover {
+      background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .card-day-30 .btn-submit {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    }
+
+    .card-day-30 .btn-submit:hover {
+      background: linear-gradient(135deg, #047857 0%, #065f46 100%);
+      box-shadow: 0 6px 20px rgba(5, 150, 105, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      filter: grayscale(0.6);
+      transform: none !important;
+      box-shadow: none !important;
+      pointer-events: none;
+    }
+
+    /* Save Both Days Button */
+    .save-both-container {
+      text-align: center;
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+
+    .btn-save-both {
+      background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .btn-save-both:hover {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+
+    .btn-save-both:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      background: #94a3b8;
+      filter: grayscale(0.7);
+      transform: none !important;
+      box-shadow: none !important;
+      pointer-events: none;
+    }
+
+    .btn-validation-hint {
+      font-size: 0.78rem;
+      color: #b91c1c;
+      background: #fef2f2;
+      border: 1px dashed #fca5a5;
+      padding: 7px 12px;
+      border-radius: 8px;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      text-align: center;
+      animation: fadeInHint 0.25s ease;
+    }
+
+    @keyframes fadeInHint {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Recent entries inside card */
+    .recent-block {
+      border-top: 1px solid var(--border-color);
+      padding-top: 16px;
+      margin-top: 6px;
+    }
+
+    .recent-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      padding: 4px 6px;
+      border-radius: 8px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .recent-header:hover {
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    .btn-view-all-recent {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px 14px;
+      border: 1.5px dashed #cbd5e1;
+      border-radius: 10px;
+      background: #f8fafc;
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #334155;
+      transition: var(--transition);
+    }
+
+    .card-day-23 .btn-view-all-recent:hover {
+      background: #eff6ff;
+      border-color: #93c5fd;
+      color: #1d4ed8;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.12);
+    }
+
+    .card-day-30 .btn-view-all-recent:hover {
+      background: #ecfdf5;
+      border-color: #6ee7b7;
+      color: #047857;
+      box-shadow: 0 2px 8px rgba(5, 150, 105, 0.12);
+    }
+
+    .recent-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .recent-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f8fafc;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      border: 1px solid #f1f5f9;
+      transition: var(--transition);
+      gap: 10px;
+    }
+
+    .recent-item:hover {
+      background: #f1f5f9;
+    }
+
+    .recent-item .office-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .recent-item .office {
+      font-weight: 500;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .recent-code-tag {
+      background: #e2e8f0;
+      color: #334155;
+      font-weight: 700;
+      font-size: 0.72rem;
+      padding: 1px 6px;
+      border-radius: 6px;
+      letter-spacing: 0.3px;
+      flex-shrink: 0;
+      display: inline-block;
+    }
+
+    .card-day-23 .recent-code-tag {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+
+    .card-day-30 .recent-code-tag {
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+    }
+
+    .recent-office-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    .recent-item .count-badge {
+      background: #e2e8f0;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      font-weight: 600;
+      color: #1e293b;
+      flex-shrink: 0;
+    }
+
+    .btn-edit-inline {
+      background: transparent;
+      border: none;
+      color: #64748b;
+      cursor: pointer;
+      padding: 3px 6px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      transition: var(--transition);
+    }
+
+    .btn-edit-inline:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    /* Status Bar / Toast */
+    .data-source-status {
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #10b981;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+    }
+
+    /* Loader Modal */
+    .spinner {
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top: 3px solid white;
+      width: 18px;
+      height: 18px;
+      animation: spin 0.8s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* ==================== Popup Modal Details Styles ==================== */
+    .details-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      padding: 16px;
+    }
+
+    .details-modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .details-modal-card {
+      background: white;
+      border-radius: 20px;
+      max-width: 850px;
+      width: 100%;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      transform: scale(0.95) translateY(10px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
+
+    .details-modal-overlay.active .details-modal-card {
+      transform: scale(1) translateY(0);
+    }
+
+    .modal-header {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+
+    .modal-header.theme-23 {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    }
+
+    .modal-header.theme-30 {
+      background: linear-gradient(135deg, #064e3b 0%, #059669 100%);
+    }
+
+    .modal-title-group h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .modal-title-group p {
+      font-size: 0.85rem;
+      opacity: 0.9;
+      margin-top: 4px;
+    }
+
+    .btn-close-modal {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: white;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+
+    .btn-close-modal:hover {
+      background: rgba(255, 255, 255, 0.35);
+      transform: rotate(90deg);
+    }
+
+    /* Modal Summary Stats Bar */
+    .modal-stats-bar {
+      background: #f8fafc;
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .modal-stat-item {
+      font-size: 0.95rem;
+      color: #334155;
+    }
+
+    .modal-stat-item strong {
+      font-size: 1.2rem;
+      color: #0f172a;
+    }
+
+    .modal-search-wrapper {
+      position: relative;
+      width: 260px;
+    }
+
+    .modal-search-wrapper input {
+      width: 100%;
+      padding: 8px 12px 8px 34px;
+      border-radius: 10px;
+      border: 1.5px solid var(--border-color);
+      font-size: 0.88rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .modal-search-wrapper input:focus {
+      border-color: #2563eb;
+    }
+
+    .modal-search-wrapper i {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+
+    /* Modal Body & Table */
+    .modal-body {
+      padding: 0;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .table-details {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.92rem;
+    }
+
+    .table-details th {
+      background: #f1f5f9;
+      padding: 12px 16px;
+      font-weight: 600;
+      color: #475569;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      border-bottom: 1px solid #cbd5e1;
+    }
+
+    .table-details td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #1e293b;
+    }
+
+    .table-details tr:hover td {
+      background: #f8fafc;
+    }
+
+    .badge-count-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 4px 12px;
+      border-radius: 9999px;
+    }
+
+    .badge-count-23 {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+
+    .badge-count-30 {
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+    }
+
+    .btn-edit-row {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1d4ed8;
+      padding: 5px 12px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-edit-row:hover {
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
+    }
+
+    .empty-state {
+      padding: 48px 24px;
+      text-align: center;
+      color: #94a3b8;
+    }
+
+    .empty-state i {
+      font-size: 2.8rem;
+      margin-bottom: 12px;
+      opacity: 0.5;
+    }
+
+    .modal-footer {
+      padding: 14px 24px;
+      background: #f8fafc;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .btn-modal-close {
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      background: white;
+      color: #475569;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-modal-close:hover {
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    /* Highlight Animation เมื่อเริ่มแก้ไข */
+    @keyframes highlightPulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
+      70% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+    }
+
+    .pulse-highlight {
+      animation: highlightPulse 1.2s ease-in-out;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        padding: 16px 12px;
+      }
+      .title-primary {
+        font-size: 1.65rem;
+        line-height: 1.3;
+      }
+      .title-secondary {
+        flex-direction: column;
+        gap: 8px;
+        font-size: 0.88rem;
+      }
+      .event-and {
+        display: none;
+      }
+      .global-office-card {
+        padding: 18px 16px;
+      }
+      .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .modal-search-wrapper {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1 class="header-title-gradient">
+        <span class="title-primary">ขอสำรวจความประสงค์จะร่วมงาน</span>
+        <span class="title-secondary">
+          <span class="event-part-1">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <span>จัดงานเลี้ยงสังสรรค์ (วันที่ 23 ต.ค. 69)</span>
+          </span>
+          <span class="event-and">และ</span>
+          <span class="event-part-2">
+            <i class="fa-solid fa-van-shuttle"></i>
+            <span>ร่วมเดินทางไปส่งฝ่ายที่ ปข.1 (วันที่ 30 ต.ค. 69)</span>
+          </span>
+        </span>
+      </h1>
+
+      <!-- กล่องข้อความอธิบาย -->
+      <div class="header-desc-card">
+        <div class="desc-card-icon">
+          <i class="fa-solid fa-envelope-open-text"></i>
+        </div>
+        <div class="desc-card-content">
+          <h3 class="desc-card-title">
+            <i class="fa-solid fa-bullhorn" style="font-size: 0.95rem; color: #2563eb;"></i>
+            ขอสำรวจความประสงค์จะร่วมงาน
+          </h3>
+          <p class="desc-card-text">
+            เนื่องในวาระที่ <strong>นายวชิร รัชตวรคุณ ฝปข.10</strong> ได้รับการแต่งตั้งให้ไปดำรงตำแหน่ง <strong>ฝปข.1</strong> ทาง ปข.10 จึงได้กำหนดจัดงานเลี้ยงสังสรรค์ <strong>(วันที่ 23 ต.ค. 2569 เวลา 10.00 - 15.00 น.)</strong> เพื่อเป็นการแสดงความขอบคุณสำหรับความทุ่มเทในการปฏิบัติงานตลอดระยะเวลาที่ผ่านมา และเพื่อร่วมแสดงความยินดีในโอกาสแห่งความก้าวหน้าทางหน้าที่การงาน จึงขอเรียนเชิญทุกท่านร่วมงานเลี้ยงส่ง พบปะสังสรรค์ ตามกำหนดการ ดังนี้
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Top Summary Pills (คลิกเพื่อดูรายละเอียดแบบ Popup) -->
+    <div class="summary-overview">
+      <div class="stat-pill pill-23" onclick="openDetailsPopup('23')" title="คลิกเพื่อดูรายละเอียด: จัดงานเลี้ยงสังสรรค์ (วันที่ 23 ต.ค. 69)">
+        <div class="info">
+          <h4>
+            <span>จัดงานเลี้ยงสังสรรค์ (23 ต.ค. 69)</span>
+          </h4>
+          <div class="stat-number" id="sumCount23">0 <span style="font-size: 1rem; font-weight: normal; color: #64748b;">คน</span></div>
+          <span class="pill-click-hint">
+            <i class="fa-solid fa-list-ul"></i> คลิกดูรายชื่อที่ทำการ
+          </span>
+        </div>
+        <div class="icon-box">
+          <i class="fa-solid fa-champagne-glasses"></i>
+        </div>
+      </div>
+
+      <div class="stat-pill pill-30" onclick="openDetailsPopup('30')" title="คลิกเพื่อดูรายละเอียด: ร่วมเดินทางไปส่งฝ่ายที่ ปข.1 (วันที่ 30 ต.ค. 69)">
+        <div class="info">
+          <h4>
+            <span>ร่วมเดินทางไปส่งฝ่ายที่ ปข.1 (30 ต.ค. 69)</span>
+          </h4>
+          <div class="stat-number" id="sumCount30">0 <span style="font-size: 1rem; font-weight: normal; color: #64748b;">คน</span></div>
+          <span class="pill-click-hint">
+            <i class="fa-solid fa-list-ul"></i> คลิกดูรายชื่อที่ทำการ
+          </span>
+        </div>
+        <div class="icon-box">
+          <i class="fa-solid fa-van-shuttle"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== จุดกรอกรหัสที่ทำการจุดเดียว (Global Office Card) ==================== -->
+    <div class="global-office-card" id="globalOfficeCard">
+      <div class="office-card-header">
+        <div class="office-card-title">
+          <span class="step-badge">1</span>
+          <span>ระบุรหัสไปรษณีย์</span>
+          <span class="required-star">*</span>
+        </div>
+      </div>
+
+      <div class="office-input-grid">
+        <!-- ช่องป้อนรหัส -->
+        <div class="input-wrapper">
+          <i class="fa-solid fa-building input-icon"></i>
+          <input 
+            type="text" 
+            id="globalOfficeCode" 
+            class="form-control-office" 
+            placeholder="ระบุรหัสไปรษณีย์" 
+            list="officesList"
+            autocomplete="off"
+            oninput="handleGlobalOfficeInput()"
+            required
+          >
+        </div>
+
+        <!-- กล่องแสดงผลชื่อที่ทำการที่ค้นพบ -->
+        <div id="globalOfficeStatusBox" class="office-status-box">
+          <i class="fa-solid fa-circle-question" id="globalOfficeStatusIcon"></i>
+          <div style="flex: 1;">
+            <span class="status-text-title" id="globalOfficeStatusSub" style="display: none;"></span>
+            <span class="status-text-name" id="globalOfficeNameText">โปรดระบุรหัสไปรษณีย์</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards Section: แยก 2 การ์ด (วันที่ 23 และ 30) -->
+    <div class="cards-grid">
+
+      <!-- ==================== การ์ดวันที่ 23 (จัดงานเลี้ยงสังสรรค์) ==================== -->
+      <div class="survey-card card-day-23 card-locked" id="cardContainer23">
+        <div class="card-header">
+          <div class="header-content">
+            <div>
+              <h2>จัดงานเลี้ยงสังสรรค์</h2>
+              <p>ค่าใช้จ่าย 350 บาท/คน</p>
+            </div>
+            <div class="day-number-circle">
+              23
+              <span>ต.ค. 69</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <form id="form23" onsubmit="handleFormSubmit(event, '23')">
+
+            <!-- ป้ายแสดงที่ทำการที่เชื่อมโยงจากการ์ดหลัก -->
+            <div class="card-linked-office" id="linkedOfficeTag23">
+              <div>
+                <span style="font-size: 0.75rem; color: #64748b; display: block;">ที่ทำการที่กำลังบันทึก:</span>
+                <strong id="linkedOfficeName23">ยังไม่ได้ระบุรหัสที่ทำการ</strong>
+              </div>
+              <div id="existingBadge23" style="display: none;">
+                <span class="existing-info-badge"><i class="fa-solid fa-pen-to-square"></i> ข้อมูลเดิม</span>
+              </div>
+            </div>
+
+            <!-- กล่องแจ้งเตือนต้องระบุรหัสที่ทำการก่อน -->
+            <div class="card-lock-banner" id="lockBanner23" onclick="promptFocusOfficeCode()" title="คลิกเพื่อไประบุรหัสไปรษณีย์">
+              <div class="lock-icon-circle"><i class="fa-solid fa-lock"></i></div>
+              <div class="lock-banner-text">
+                <strong>ต้องระบุรหัสที่ทำการก่อน</strong>
+                <span>กรุณาระบุรหัสไปรษณีย์ในขั้นตอนที่ 1 ด้านบน จึงจะสามารถระบุข้อมูลในขั้นตอนนี้ได้</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square lock-arrow-icon"></i>
+            </div>
+
+            <!-- พื้นที่กรอกข้อมูล (จะปลดล็อคเมื่อระบุรหัสที่ทำการแล้ว) -->
+            <fieldset id="fieldset23" class="form-interactive-area" style="border: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 18px;" disabled>
+              <!-- จำนวนคน -->
+              <div class="form-group">
+                <label class="form-label">
+                  <span>จำนวนคน (คน)</span>
+                  <span class="required-star">*</span>
+                </label>
+                <div class="counter-wrapper">
+                  <button type="button" class="counter-btn" onclick="stepCount('23', -1)">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <input 
+                    type="number" 
+                    id="peopleCount23" 
+                    class="form-control counter-input" 
+                    value="0" 
+                    min="0" 
+                    required
+                  >
+                  <button type="button" class="counter-btn" onclick="stepCount('23', 1)">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+                <div class="quick-chips">
+                  <span class="quick-chip" onclick="setCount('23', 0)">0 คน</span>
+                  <span class="quick-chip" onclick="setCount('23', 1)">1 คน</span>
+                  <span class="quick-chip" onclick="setCount('23', 2)">2 คน</span>
+                  <span class="quick-chip" onclick="setCount('23', 3)">3 คน</span>
+                  <span class="quick-chip" onclick="setCount('23', 5)">5 คน</span>
+                  <span class="quick-chip" onclick="setCount('23', 10)">10 คน</span>
+                </div>
+              </div>
+
+              <!-- หมายเหตุเพิ่มเติม -->
+              <div class="form-group">
+                <label class="form-label">หมายเหตุ (ถ้ามี)</label>
+                <input 
+                  type="text" 
+                  id="note23" 
+                  class="form-control" 
+                  placeholder="ระบุข้อมูลเพิ่มเติม (ถ้ามี)"
+                >
+              </div>
+
+              <!-- ปุ่มบันทึก -->
+              <button type="submit" id="btnSubmit23" class="btn-submit" disabled>
+                <i class="fa-solid fa-paper-plane" id="btnIcon23"></i>
+                <span id="btnText23">บันทึกข้อมูล วันจัดงานเลี้ยงสังสรรค์</span>
+              </button>
+              <div id="hint23" class="btn-validation-hint">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span id="hintText23">โปรดระบุรหัสไปรษณีย์ด้านบนก่อน</span>
+              </div>
+            </fieldset>
+          </form>
+
+          <!-- รายการบันทึกล่าสุด (แสดง 5 รายการล่าสุด) -->
+          <div class="recent-block">
+            <div class="recent-header" onclick="openDetailsPopup('23')" title="คลิกเพื่อดูข้อมูลทั้งหมด">
+              <span><i class="fa-solid fa-clock-rotate-left"></i> 5 รายการล่าสุด (จัดงานเลี้ยงสังสรรค์)</span>
+              <span id="recentCount23" style="font-weight: 600; color: #2563eb;">
+                0 ที่ทำการ <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+              </span>
+            </div>
+            <ul id="recentList23" class="recent-list">
+              <li class="recent-item" style="color: #94a3b8; justify-content: center;">
+                ยังไม่มีข้อมูลการบันทึก
+              </li>
+            </ul>
+            <div id="recentFooter23"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ==================== การ์ดวันที่ 30 (ร่วมเดินทางไปส่งฝ่ายที่ ปข.1) ==================== -->
+      <div class="survey-card card-day-30 card-locked" id="cardContainer30">
+        <div class="card-header">
+          <div class="header-content">
+            <div>
+              <h2>ร่วมเดินทางไปส่งฝ่ายที่ ปข.1</h2>
+              <p>ค่าใช้จ่ายขึ้นอยู่กับการเดินทาง</p>
+            </div>
+            <div class="day-number-circle">
+              30
+              <span>ต.ค. 69</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <form id="form30" onsubmit="handleFormSubmit(event, '30')">
+
+            <!-- ป้ายแสดงที่ทำการที่เชื่อมโยงจากการ์ดหลัก -->
+            <div class="card-linked-office" id="linkedOfficeTag30">
+              <div>
+                <span style="font-size: 0.75rem; color: #64748b; display: block;">ที่ทำการที่กำลังบันทึก:</span>
+                <strong id="linkedOfficeName30">ยังไม่ได้ระบุรหัสที่ทำการ</strong>
+              </div>
+              <div id="existingBadge30" style="display: none;">
+                <span class="existing-info-badge"><i class="fa-solid fa-pen-to-square"></i> ข้อมูลเดิม</span>
+              </div>
+            </div>
+
+            <!-- กล่องแจ้งเตือนต้องระบุรหัสที่ทำการก่อน -->
+            <div class="card-lock-banner" id="lockBanner30" onclick="promptFocusOfficeCode()" title="คลิกเพื่อไประบุรหัสไปรษณีย์">
+              <div class="lock-icon-circle"><i class="fa-solid fa-lock"></i></div>
+              <div class="lock-banner-text">
+                <strong>ต้องระบุรหัสที่ทำการก่อน</strong>
+                <span>กรุณาระบุรหัสไปรษณีย์ในขั้นตอนที่ 1 ด้านบน จึงจะสามารถระบุข้อมูลในขั้นตอนนี้ได้</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square lock-arrow-icon"></i>
+            </div>
+
+            <!-- พื้นที่กรอกข้อมูล (จะปลดล็อคเมื่อระบุรหัสที่ทำการแล้ว) -->
+            <fieldset id="fieldset30" class="form-interactive-area" style="border: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 18px;" disabled>
+              <!-- จำนวนคน -->
+              <div class="form-group">
+                <label class="form-label">
+                  <span>จำนวนคน (คน)</span>
+                  <span class="required-star">*</span>
+                </label>
+                <div class="counter-wrapper">
+                  <button type="button" class="counter-btn" onclick="stepCount('30', -1)">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <input 
+                    type="number" 
+                    id="peopleCount30" 
+                    class="form-control counter-input" 
+                    value="0" 
+                    min="0" 
+                    required
+                  >
+                  <button type="button" class="counter-btn" onclick="stepCount('30', 1)">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+                <div class="quick-chips">
+                  <span class="quick-chip" onclick="setCount('30', 0)">0 คน</span>
+                  <span class="quick-chip" onclick="setCount('30', 1)">1 คน</span>
+                  <span class="quick-chip" onclick="setCount('30', 2)">2 คน</span>
+                  <span class="quick-chip" onclick="setCount('30', 3)">3 คน</span>
+                  <span class="quick-chip" onclick="setCount('30', 5)">5 คน</span>
+                  <span class="quick-chip" onclick="setCount('30', 10)">10 คน</span>
+                </div>
+              </div>
+
+              <!-- หมายเหตุ (ตัวเลือกการเดินทางตามที่กำหนด) -->
+              <div class="form-group">
+                <label class="form-label">
+                  <i class="fa-solid fa-van-shuttle" style="color: #059669;"></i>
+                  <span>หมายเหตุ (การเดินทาง)</span>
+                  <span class="required-star">*</span>
+                </label>
+                
+                <div class="travel-choices-grid" id="travelChoicesGrid">
+                  <!-- ตัวเลือกที่ 1 -->
+                  <div class="travel-choice-card" id="travelCard1" onclick="toggleTravelChoice('1. เดินทางไปกับรถสำนักงาน ปข.10 (ค่าใช้จ่าย 800 บาท/คน)', 1)">
+                    <div class="travel-choice-content">
+                      <i class="fa-solid fa-van-shuttle"></i>
+                      <span>1. เดินทางไปกับรถสำนักงาน ปข.10 (ค่าใช้จ่าย 800 บาท/คน)</span>
+                    </div>
+                    <i class="fa-solid fa-circle-check travel-check-icon"></i>
+                  </div>
+
+                  <!-- ตัวเลือกที่ 2 -->
+                  <div class="travel-choice-card" id="travelCard2" onclick="toggleTravelChoice('2. เดินทางไปกับรถโซน สกลนคร นครพนม มุกดาหาร', 2)">
+                    <div class="travel-choice-content">
+                      <i class="fa-solid fa-bus-simple"></i>
+                      <span>2. เดินทางไปกับรถโซน สกลนคร นครพนม มุกดาหาร</span>
+                    </div>
+                    <i class="fa-solid fa-circle-check travel-check-icon"></i>
+                  </div>
+                </div>
+
+                <!-- ช่องพิมพ์ข้อความเพิ่มเติม (ถ้ามี) -->
+                <input 
+                  type="text" 
+                  id="noteCustom30" 
+                  class="form-control" 
+                  placeholder="ระบุข้อความเพิ่มเติม (ถ้ามี)"
+                  style="margin-top: 4px; font-size: 0.9rem;"
+                >
+              </div>
+
+              <!-- ปุ่มบันทึก -->
+              <button type="submit" id="btnSubmit30" class="btn-submit" disabled>
+                <i class="fa-solid fa-paper-plane" id="btnIcon30"></i>
+                <span id="btnText30">บันทึกข้อมูล วันร่วมเดินทางไปส่งฝ่าย</span>
+              </button>
+              <div id="hint30" class="btn-validation-hint">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span id="hintText30">โปรดระบุรหัสไปรษณีย์ด้านบนก่อน</span>
+              </div>
+            </fieldset>
+          </form>
+
+          <!-- รายการบันทึกล่าสุด (แสดง 5 รายการล่าสุด) -->
+          <div class="recent-block">
+            <div class="recent-header" onclick="openDetailsPopup('30')" title="คลิกเพื่อดูข้อมูลทั้งหมด">
+              <span><i class="fa-solid fa-clock-rotate-left"></i> 5 รายการล่าสุด (ไปส่งฝ่ายที่ ปข.1)</span>
+              <span id="recentCount30" style="font-weight: 600; color: #059669;">
+                0 ที่ทำการ <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+              </span>
+            </div>
+            <ul id="recentList30" class="recent-list">
+              <li class="recent-item" style="color: #94a3b8; justify-content: center;">
+                ยังไม่มีข้อมูลการบันทึก
+              </li>
+            </ul>
+            <div id="recentFooter30"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ปุ่มลัด: บันทึกทั้ง 2 งานพร้อมกันในคลิกเดียว -->
+    <div class="save-both-container card-locked" id="saveBothContainer">
+      <button type="button" id="btnSaveBoth" class="btn-save-both" onclick="saveBothDays()" disabled>
+        <i class="fa-solid fa-layer-group"></i>
+        <span>บันทึกข้อมูลทั้ง 2 งานพร้อมกัน (จัดงานเลี้ยงสังสรรค์ และ ร่วมเดินทางไปส่งฝ่ายที่ ปข.1)</span>
+      </button>
+      <div id="hintBoth" class="btn-validation-hint" style="max-width: 460px; margin: 8px auto 0;">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <span id="hintTextBoth">โปรดระบุรหัสไปรษณีย์ด้านบนก่อน</span>
+      </div>
+    </div>
+
+    <!-- Datalist สำหรับ autocomplete รหัสที่ทำการ -->
+    <datalist id="officesList"></datalist>
+  </div>
+
+  <!-- ==================== Details Modal Popup (แสดงรายละเอียดแต่ละที่ทำการ) ==================== -->
+  <div id="detailsModalOverlay" class="details-modal-overlay" onclick="handleModalOverlayClick(event)">
+    <div class="details-modal-card">
+      <div id="modalHeader" class="modal-header theme-23">
+        <div class="modal-title-group">
+          <h3 id="modalTitle">
+            <i class="fa-solid fa-champagne-glasses"></i> รายละเอียด: จัดงานเลี้ยงสังสรรค์ (23 ต.ค. 69)
+          </h3>
+          <p id="modalSubTitle">ข้อมูลการบันทึกจากชีต "23"</p>
+        </div>
+        <button type="button" class="btn-close-modal" onclick="closeDetailsPopup()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- สรุปตัวเลข & ช่องค้นหา -->
+      <div class="modal-stats-bar">
+        <div class="modal-stat-item">
+          <span>รวมทั้งหมด: </span>
+          <strong id="modalStatTotalPeople">0</strong> คน 
+          <span style="color: #94a3b8; margin: 0 4px;">|</span> 
+          <strong id="modalStatTotalOffices">0</strong> ที่ทำการ
+        </div>
+        <div class="modal-search-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input 
+            type="text" 
+            id="modalSearchInput" 
+            placeholder="ค้นหารหัส หรือชื่อที่ทำการ..." 
+            oninput="filterModalTable()"
+          >
+        </div>
+      </div>
+
+      <!-- ตารางรายละเอียด -->
+      <div class="modal-body">
+        <table class="table-details">
+          <thead>
+            <tr>
+              <th style="width: 50px; text-align: center;">#</th>
+              <th style="width: 100px;">รหัส</th>
+              <th>ชื่อที่ทำการ</th>
+              <th style="width: 110px; text-align: center;">จำนวนคน</th>
+              <th>หมายเหตุ</th>
+              <th style="width: 135px; text-align: right;">วัน-เวลาบันทึก</th>
+              <th style="width: 90px; text-align: center;">จัดการ</th>
+            </tr>
+          </thead>
+          <tbody id="modalTableBody">
+            <!-- ข้อมูลจะถูก render ด้วย JavaScript -->
+          </tbody>
+        </table>
+
+        <!-- Empty State -->
+        <div id="modalEmptyState" class="empty-state" style="display: none;">
+          <i class="fa-regular fa-folder-open"></i>
+          <h4>ไม่พบข้อมูลการบันทึก</h4>
+          <p style="font-size: 0.85rem; margin-top: 4px;">ยังไม่มีที่ทำการใดลงบันทึกในวันนี้ หรือไม่มีข้อมูลที่ตรงกับคำค้นหา</p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-modal-close" onclick="closeDetailsPopup()">ปิดหน้าต่าง</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // ⚙️ การตั้งค่า URL สำหรับ GitHub Pages / โฮสติ้งภายนอก
+    // หากนำเว็บขึ้น GitHub Pages ให้นำ Web App URL จาก Google Apps Script มาใส่ที่นี่
+    // ตัวอย่าง: const GAS_API_URL = "https://script.google.com/macros/s/AKfycbw.../exec";
+    // (หากเปิดใช้งานภายใน Google Apps Script โดยตรง ระบบจะเชื่อมต่อให้อัตโนมัติแม้เว้นว่างไว้)
+    // =========================================================================
+    const GAS_API_URL = "";
+
+    /**
+     * ศูนย์กลางเรียกข้อมูล API (รองรับทั้ง Google Apps Script, GitHub Pages และ Local Mock)
+     */
+    async function apiRequest(action, payload = null) {
+      // 1. กรณีทำงานอยู่ภายใน Google Apps Script ปกติ
+      if (typeof google !== "undefined" && google.script && google.script.run) {
+        return new Promise((resolve, reject) => {
+          if (action === "getOffices") {
+            google.script.run.withSuccessHandler(resolve).withFailureHandler(reject).getOfficeDirectory();
+          } else if (action === "getSummary") {
+            google.script.run.withSuccessHandler(resolve).withFailureHandler(reject).getSummaryData();
+          } else if (action === "saveSubmission") {
+            google.script.run.withSuccessHandler(resolve).withFailureHandler(reject).saveSurveySubmission(payload);
+          } else {
+            reject(new Error("Unknown action: " + action));
+          }
+        });
+      }
+
+      // 2. กรณีเปิดจาก GitHub Pages หรือภายนอกโดยมีการระบุ GAS_API_URL
+      if (GAS_API_URL && GAS_API_URL.trim().startsWith("http")) {
+        try {
+          if (action === "saveSubmission") {
+            // ใช้ Content-Type: text/plain เพื่อป้องกัน CORS preflight OPTIONS block ใน Google Apps Script
+            const res = await fetch(GAS_API_URL, {
+              method: "POST",
+              headers: { "Content-Type": "text/plain;charset=utf-8" },
+              body: JSON.stringify({ action: "saveSubmission", payload: payload })
+            });
+            return await res.json();
+          } else {
+            const url = `${GAS_API_URL}?action=${encodeURIComponent(action)}`;
+            const res = await fetch(url);
+            return await res.json();
+          }
+        } catch (err) {
+          console.error(`API Error (${action}):`, err);
+          throw err;
+        }
+      }
+
+      // 3. กรณี Local Preview หรือยังไม่ได้ใส่ URL (Mock Data)
+      console.warn(`[Local Preview] Mock response for action: ${action}`);
+      if (action === "getOffices") {
+        return {
+          success: true,
+          offices: [
+            { code: "33000", name: "ศรีสะเกษ" },
+            { code: "33001", name: "ปณ. กันทรลักษ์" },
+            { code: "33002", name: "ปณ. อุทุมพรพิสัย" },
+            { code: "10101", name: "ที่ทำการ ปข.10 (ส่วนกลาง)" },
+            { code: "10102", name: "ปณ. บางซื่อ" }
+          ]
+        };
+      } else if (action === "getSummary") {
+        return {
+          success: true,
+          summary: {
+            day23: {
+              totalPeople: 5,
+              totalOffices: 1,
+              recentList: [{ time: "24/09/2026 09:30", code: "33000", name: "ศรีสะเกษ", count: 5 }],
+              allList: [{ time: "24/09/2026 09:30", code: "33000", name: "ศรีสะเกษ", count: 5, note: "รถตู้ 1 คัน" }]
+            },
+            day30: {
+              totalPeople: 5,
+              totalOffices: 1,
+              recentList: [{ time: "24/09/2026 09:35", code: "33000", name: "ศรีสะเกษ", count: 5 }],
+              allList: [{ time: "24/09/2026 09:35", code: "33000", name: "ศรีสะเกษ", count: 5, note: "1. เดินทางไปกับรถสำนักงาน ปข.10 (ค่าใช้จ่าย 800 บาท/คน)" }]
+            }
+          }
+        };
+      } else if (action === "saveSubmission") {
+        return new Promise(resolve => {
+          setTimeout(() => {
+            resolve({
+              success: true,
+              message: "บันทึกข้อมูลสำเร็จ (Local Mock)",
+              updatedExisting: false,
+              deleted: payload.peopleCount === 0
+            });
+          }, 500);
+        });
+      }
+    }
+
+    // ที่เก็บแคชข้อมูลที่ทำการ { code, name }
+    let officeDirectory = [];
+    let officeMap = new Map();
+
+    // ตัวแปรเก็บรหัสและชื่อที่ทำการที่เลือกในปัจจุบัน
+    let currentSelectedCode = "";
+    let currentSelectedName = "";
+
+    // ตัวแปรเก็บตัวเลือกการเดินทางของวันที่ 30
+    let selectedTravel30 = "";
+
+    // ตัวแปรเก็บข้อมูลสรุปและรายการทั้งหมดของแต่ละวัน
+    let cachedSummaryData = {
+      day23: { totalPeople: 0, totalOffices: 0, recentList: [], allList: [] },
+      day30: { totalPeople: 0, totalOffices: 0, recentList: [], allList: [] }
+    };
+
+    let activeModalDay = "23";
+
+    // เริ่มต้นทำงานเมื่อโหลดหน้า
+    window.addEventListener("DOMContentLoaded", () => {
+      // ตรวจสอบหากเปิดบน GitHub Pages แต่ยังไม่ได้ระบุ URL
+      if (window.location.hostname.includes("github.io") && (!GAS_API_URL || !GAS_API_URL.startsWith("http"))) {
+        Swal.fire({
+          icon: "info",
+          title: "ตั้งค่าเชื่อมต่อ Google Sheet",
+          html: `
+            <div style="text-align: left; font-size: 0.92rem; line-height: 1.6;">
+              <p>ยินดีต้อนรับสู่เว็บสำรวจบน <strong>GitHub Pages</strong>!</p>
+              <p style="margin-top: 8px; color: #dc2626;">⚠️ ขณะนี้ยังไม่ได้ระบุ <code>GAS_API_URL</code> เพื่อเชื่อมต่อกับ Google Sheets</p>
+              <div style="background: #f1f5f9; padding: 10px; border-radius: 8px; margin-top: 10px; font-size: 0.85rem;">
+                <strong>วิธีตั้งค่า:</strong> นำ Web App URL ของ Google Apps Script มาใส่ที่ตัวแปร <code>const GAS_API_URL = "..."</code> ในไฟล์ <code>index.html</code>
+              </div>
+            </div>
+          `,
+          confirmButtonColor: "#2563eb",
+          confirmButtonText: "รับทราบ"
+        });
+      }
+
+      loadOfficeData();
+      refreshSummary();
+
+      // ดักจับการพิมพ์จำนวนคนเพื่อตรวจสอบปุ่มทันที
+      document.getElementById("peopleCount23")?.addEventListener("input", validateAndToggleSubmitButtons);
+      document.getElementById("peopleCount30")?.addEventListener("input", validateAndToggleSubmitButtons);
+
+      // เรียกตรวจสอบสถานะการล็อคการ์ดและสถานะปุ่มเริ่มต้น
+      updateCardsLockState();
+      validateAndToggleSubmitButtons();
+    });
+
+    /**
+     * โฟกัสและเลื่อนหน้าจอไปยังจุดระบุรหัสไปรษณีย์ พร้อมเอฟเฟกต์กระพริบไฮไลท์
+     */
+    function promptFocusOfficeCode() {
+      const codeInput = document.getElementById("globalOfficeCode");
+      const card = document.getElementById("globalOfficeCard");
+      if (codeInput) {
+        codeInput.focus();
+        codeInput.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      if (card) {
+        card.classList.remove("highlight-pulse");
+        void card.offsetWidth; // บังคับ trigger reflow
+        card.classList.add("highlight-pulse");
+        setTimeout(() => card.classList.remove("highlight-pulse"), 1000);
+      }
+    }
+
+    /**
+     * อัปเดตสถานะการล็อค/ปลดล็อคของการ์ดทั้ง 2 วัน
+     * เมื่อยังไม่ระบุรหัสที่ทำการในขั้นตอนที่ 1 การ์ดจะถูกล็อคไม่ให้ระบุข้อมูล
+     */
+    function updateCardsLockState() {
+      const codeInput = document.getElementById("globalOfficeCode");
+      const code = (currentSelectedCode || (codeInput ? codeInput.value : "")).trim();
+      const isLocked = code.length === 0;
+
+      const card23 = document.getElementById("cardContainer23");
+      const card30 = document.getElementById("cardContainer30");
+      const bothContainer = document.getElementById("saveBothContainer");
+      const lockBanner23 = document.getElementById("lockBanner23");
+      const lockBanner30 = document.getElementById("lockBanner30");
+      const fieldset23 = document.getElementById("fieldset23");
+      const fieldset30 = document.getElementById("fieldset30");
+
+      if (isLocked) {
+        if (card23) card23.classList.add("card-locked");
+        if (card30) card30.classList.add("card-locked");
+        if (bothContainer) bothContainer.classList.add("card-locked");
+        if (lockBanner23) lockBanner23.style.display = "flex";
+        if (lockBanner30) lockBanner30.style.display = "flex";
+        if (fieldset23) fieldset23.disabled = true;
+        if (fieldset30) fieldset30.disabled = true;
+      } else {
+        if (card23) card23.classList.remove("card-locked");
+        if (card30) card30.classList.remove("card-locked");
+        if (bothContainer) bothContainer.classList.remove("card-locked");
+        if (lockBanner23) lockBanner23.style.display = "none";
+        if (lockBanner30) lockBanner30.style.display = "none";
+        if (fieldset23) fieldset23.disabled = false;
+        if (fieldset30) fieldset30.disabled = false;
+      }
+    }
+
+    /**
+     * ตรวจสอบความถูกต้องของข้อมูลจำเป็น และเปิด/ปิดการใช้งานปุ่มบันทึก (Real-time Validation)
+     */
+    function validateAndToggleSubmitButtons() {
+      updateCardsLockState();
+
+      const codeInput = document.getElementById("globalOfficeCode");
+      const code = (currentSelectedCode || (codeInput ? codeInput.value : "")).trim();
+      const hasCode = code.length > 0;
+
+      const countInput23 = document.getElementById("peopleCount23");
+      const countInput30 = document.getElementById("peopleCount30");
+      const count23 = countInput23 ? (parseInt(countInput23.value) || 0) : 0;
+      const count30 = countInput30 ? (parseInt(countInput30.value) || 0) : 0;
+
+      // ตรวจสอบว่าเคยมีข้อมูลเดิมในชีต 23 และ 30 หรือไม่
+      const cleanCode = code.toLowerCase();
+      const list23 = cachedSummaryData.day23?.allList || cachedSummaryData.day22?.allList || [];
+      const hasExisting23 = hasCode && list23.some(r => String(r.code).trim().toLowerCase() === cleanCode);
+
+      const list30 = cachedSummaryData.day30?.allList || [];
+      const hasExisting30 = hasCode && list30.some(r => String(r.code).trim().toLowerCase() === cleanCode);
+
+      // --- 1. ตรวจสอบปุ่มวันที่ 23 (จัดงานเลี้ยงสังสรรค์) ---
+      const btn23 = document.getElementById("btnSubmit23");
+      const hint23 = document.getElementById("hint23");
+      const hintText23 = document.getElementById("hintText23");
+
+      let isValid23 = false;
+      let msg23 = "";
+
+      if (!hasCode) {
+        msg23 = "โปรดระบุรหัสไปรษณีย์ด้านบนก่อน";
+      } else if (count23 === 0 && !hasExisting23) {
+        msg23 = "โปรดระบุจำนวนคนอย่างน้อย 1 คน";
+      } else {
+        isValid23 = true;
+      }
+
+      if (btn23) btn23.disabled = !isValid23;
+      if (hint23 && hintText23) {
+        if (!isValid23) {
+          hint23.style.display = "flex";
+          hintText23.textContent = msg23;
+        } else {
+          hint23.style.display = "none";
+        }
+      }
+
+      // --- 2. ตรวจสอบปุ่มวันที่ 30 (ร่วมเดินทางไปส่งฝ่ายที่ ปข.1) ---
+      const btn30 = document.getElementById("btnSubmit30");
+      const hint30 = document.getElementById("hint30");
+      const hintText30 = document.getElementById("hintText30");
+
+      let isValid30 = false;
+      let msg30 = "";
+
+      if (!hasCode) {
+        msg30 = "โปรดระบุรหัสไปรษณีย์ด้านบนก่อน";
+      } else if (count30 === 0 && !hasExisting30) {
+        msg30 = "โปรดระบุจำนวนคนอย่างน้อย 1 คน";
+      } else if (count30 > 0 && !selectedTravel30) {
+        msg30 = "โปรดเลือกรูปแบบการเดินทาง (ข้อมูลจำเป็น)";
+      } else {
+        isValid30 = true;
+      }
+
+      if (btn30) btn30.disabled = !isValid30;
+      if (hint30 && hintText30) {
+        if (!isValid30) {
+          hint30.style.display = "flex";
+          hintText30.textContent = msg30;
+        } else {
+          hint30.style.display = "none";
+        }
+      }
+
+      // --- 3. ตรวจสอบปุ่มบันทึกทั้ง 2 งานพร้อมกัน ---
+      const btnBoth = document.getElementById("btnSaveBoth");
+      const hintBoth = document.getElementById("hintBoth");
+      const hintTextBoth = document.getElementById("hintTextBoth");
+
+      let isValidBoth = false;
+      let msgBoth = "";
+
+      if (!hasCode) {
+        msgBoth = "โปรดระบุรหัสไปรษณีย์ด้านบนก่อน";
+      } else if (count30 > 0 && !selectedTravel30) {
+        msgBoth = "โปรดเลือกรูปแบบการเดินทางของวันที่ 30 ก่อน";
+      } else if ((count23 === 0 && !hasExisting23) && (count30 === 0 && !hasExisting30)) {
+        msgBoth = "โปรดระบุจำนวนคนอย่างน้อย 1 งาน";
+      } else {
+        isValidBoth = true;
+      }
+
+      if (btnBoth) btnBoth.disabled = !isValidBoth;
+      if (hintBoth && hintTextBoth) {
+        if (!isValidBoth) {
+          hintBoth.style.display = "flex";
+          hintTextBoth.textContent = msgBoth;
+        } else {
+          hintBoth.style.display = "none";
+        }
+      }
+    }
+
+    /**
+     * สลับการเลือกตัวเลือกการเดินทางในการ์ดวันที่ 30
+     */
+    function toggleTravelChoice(val, cardNum) {
+      if (!currentSelectedCode || !currentSelectedCode.trim()) {
+        promptFocusOfficeCode();
+        return;
+      }
+      const card1 = document.getElementById("travelCard1");
+      const card2 = document.getElementById("travelCard2");
+      const grid = document.getElementById("travelChoicesGrid");
+      if (grid) grid.classList.remove("has-error");
+
+      if (selectedTravel30 === val) {
+        // คลิกซ้ำเพื่อยกเลิกการเลือก
+        selectedTravel30 = "";
+        card1.classList.remove("active");
+        card2.classList.remove("active");
+      } else {
+        selectedTravel30 = val;
+        if (cardNum === 1) {
+          card1.classList.add("active");
+          card2.classList.remove("active");
+        } else {
+          card2.classList.add("active");
+          card1.classList.remove("active");
+        }
+      }
+
+      validateAndToggleSubmitButtons();
+    }
+
+    /**
+     * ดึงข้อความหมายเหตุของวันที่ 30
+     */
+    function getNoteValue30() {
+      const extra = document.getElementById("noteCustom30").value.trim();
+      if (selectedTravel30 && extra) {
+        return `${selectedTravel30} (${extra})`;
+      } else if (selectedTravel30) {
+        return selectedTravel30;
+      } else {
+        return extra;
+      }
+    }
+
+    /**
+     * โหลดรายชื่อที่ทำการ
+     */
+    async function loadOfficeData() {
+      try {
+        const response = await apiRequest("getOffices");
+        onOfficeDataLoaded(response);
+      } catch (err) {
+        console.error("Failed to load office data:", err);
+      }
+    }
+
+    function onOfficeDataLoaded(response) {
+      if (!response || !response.success) {
+        console.warn("Cannot fetch offices:", response?.message);
+        return;
+      }
+
+      officeDirectory = response.offices || [];
+      officeMap.clear();
+
+      const datalist = document.getElementById("officesList");
+      datalist.innerHTML = "";
+
+      officeDirectory.forEach(item => {
+        officeMap.set(item.code.toLowerCase(), item.name);
+        const opt = document.createElement("option");
+        opt.value = item.code;
+        opt.label = `${item.code} - ${item.name}`;
+        datalist.appendChild(opt);
+      });
+    }
+
+    /**
+     * ดึงข้อมูลเดิมที่เคยบันทึกไว้ของรหัสที่ทำการนี้มาใส่ฟอร์มให้อัตโนมัติ (แก้ไขข้อมูลเดิม)
+     */
+    function populateExistingDataForCode(code) {
+      if (!code) {
+        resetFormsToDefault();
+        return;
+      }
+
+      const cleanCode = code.trim().toLowerCase();
+
+      // 1. ตรวจสอบข้อมูลเดิมของวันที่ 23
+      const list23 = cachedSummaryData.day23?.allList || cachedSummaryData.day22?.allList || [];
+      const item23 = list23.find(r => String(r.code).trim().toLowerCase() === cleanCode);
+
+      const countInput23 = document.getElementById("peopleCount23");
+      const noteInput23 = document.getElementById("note23");
+      const badge23 = document.getElementById("existingBadge23");
+      const btnIcon23 = document.getElementById("btnIcon23");
+      const btnText23 = document.getElementById("btnText23");
+
+      if (item23) {
+        countInput23.value = item23.count || 0;
+        noteInput23.value = item23.note || "";
+        badge23.style.display = "block";
+        badge23.innerHTML = `<span class="existing-info-badge" title="บันทึกเมื่อ ${item23.time}"><i class="fa-solid fa-pen-to-square"></i> ข้อมูลเดิม: ${item23.count} คน</span>`;
+        btnIcon23.className = "fa-solid fa-pen-to-square";
+        btnText23.textContent = "อัปเดตข้อมูล วันจัดงานเลี้ยงสังสรรค์";
+      } else {
+        countInput23.value = 0;
+        noteInput23.value = "";
+        badge23.style.display = "none";
+        btnIcon23.className = "fa-solid fa-paper-plane";
+        btnText23.textContent = "บันทึกข้อมูล วันจัดงานเลี้ยงสังสรรค์";
+      }
+
+      // 2. ตรวจสอบข้อมูลเดิมของวันที่ 30
+      const list30 = cachedSummaryData.day30?.allList || [];
+      const item30 = list30.find(r => String(r.code).trim().toLowerCase() === cleanCode);
+
+      const countInput30 = document.getElementById("peopleCount30");
+      const noteCustomInput30 = document.getElementById("noteCustom30");
+      const badge30 = document.getElementById("existingBadge30");
+      const btnIcon30 = document.getElementById("btnIcon30");
+      const btnText30 = document.getElementById("btnText30");
+
+      if (item30) {
+        countInput30.value = item30.count || 0;
+        badge30.style.display = "block";
+        badge30.innerHTML = `<span class="existing-info-badge" title="บันทึกเมื่อ ${item30.time}"><i class="fa-solid fa-pen-to-square"></i> ข้อมูลเดิม: ${item30.count} คน</span>`;
+        btnIcon30.className = "fa-solid fa-pen-to-square";
+        btnText30.textContent = "อัปเดตข้อมูล วันร่วมเดินทางไปส่งฝ่าย";
+
+        // แยกข้อมูลหมายเหตุการเดินทาง
+        const fullNote = String(item30.note || "").trim();
+        const card1 = document.getElementById("travelCard1");
+        const card2 = document.getElementById("travelCard2");
+
+        if (fullNote.includes("1. เดินทางไปกับรถสำนักงาน")) {
+          selectedTravel30 = "1. เดินทางไปกับรถสำนักงาน ปข.10 (ค่าใช้จ่าย 800 บาท/คน)";
+          card1.classList.add("active");
+          card2.classList.remove("active");
+          const stripped = fullNote.replace("1. เดินทางไปกับรถสำนักงาน ปข.10 (ค่าใช้จ่าย 800 บาท/คน)", "")
+                                  .replace("1. เดินทางไปกับรถสำนักงาน ปข.10", "").trim();
+          noteCustomInput30.value = extractExtraNote(stripped, "");
+        } else if (fullNote.includes("2. เดินทางไปกับรถโซน")) {
+          selectedTravel30 = "2. เดินทางไปกับรถโซน สกลนคร นครพนม มุกดาหาร";
+          card2.classList.add("active");
+          card1.classList.remove("active");
+          noteCustomInput30.value = extractExtraNote(fullNote, "2. เดินทางไปกับรถโซน สกลนคร นครพนม มุกดาหาร");
+        } else {
+          selectedTravel30 = "";
+          card1.classList.remove("active");
+          card2.classList.remove("active");
+          noteCustomInput30.value = fullNote;
+        }
+      } else {
+        countInput30.value = 0;
+        selectedTravel30 = "";
+        document.getElementById("travelCard1").classList.remove("active");
+        document.getElementById("travelCard2").classList.remove("active");
+        noteCustomInput30.value = "";
+        badge30.style.display = "none";
+        btnIcon30.className = "fa-solid fa-paper-plane";
+        btnText30.textContent = "บันทึกข้อมูล วันร่วมเดินทางไปส่งฝ่าย";
+      }
+
+      validateAndToggleSubmitButtons();
+    }
+
+    function extractExtraNote(full, prefix) {
+      let extra = full.replace(prefix, "").trim();
+      if (extra.startsWith("(") && extra.endsWith(")")) {
+        extra = extra.substring(1, extra.length - 1).trim();
+      }
+      return extra;
+    }
+
+    function resetFormsToDefault() {
+      document.getElementById("peopleCount23").value = 0;
+      document.getElementById("note23").value = "";
+      document.getElementById("existingBadge23").style.display = "none";
+      document.getElementById("btnIcon23").className = "fa-solid fa-paper-plane";
+      document.getElementById("btnText23").textContent = "บันทึกข้อมูล วันจัดงานเลี้ยงสังสรรค์";
+
+      document.getElementById("peopleCount30").value = 0;
+      document.getElementById("noteCustom30").value = "";
+      selectedTravel30 = "";
+      document.getElementById("travelCard1").classList.remove("active");
+      document.getElementById("travelCard2").classList.remove("active");
+      document.getElementById("existingBadge30").style.display = "none";
+      document.getElementById("btnIcon30").className = "fa-solid fa-paper-plane";
+      document.getElementById("btnText30").textContent = "บันทึกข้อมูล วันร่วมเดินทางไปส่งฝ่าย";
+
+      validateAndToggleSubmitButtons();
+    }
+
+    /**
+     * เมื่อพิมพ์หรือเลือกรหัสที่ทำการในจุดส่วนกลางจุดเดียว
+     */
+    function handleGlobalOfficeInput() {
+      const codeInput = document.getElementById("globalOfficeCode");
+      const statusBox = document.getElementById("globalOfficeStatusBox");
+      const statusIcon = document.getElementById("globalOfficeStatusIcon");
+      const statusSub = document.getElementById("globalOfficeStatusSub");
+      const nameText = document.getElementById("globalOfficeNameText");
+
+      const inputVal = codeInput.value.trim().toLowerCase();
+
+      if (!inputVal) {
+        currentSelectedCode = "";
+        currentSelectedName = "";
+        statusBox.className = "office-status-box";
+        statusIcon.className = "fa-solid fa-circle-question";
+        statusSub.textContent = "";
+        statusSub.style.display = "none";
+        nameText.textContent = "โปรดระบุรหัสไปรษณีย์";
+        updateLinkedOfficeDisplay();
+        resetFormsToDefault();
+        return;
+      }
+
+      // ค้นหาใน Map
+      if (officeMap.has(inputVal)) {
+        const foundName = officeMap.get(inputVal);
+        currentSelectedCode = codeInput.value.trim();
+        currentSelectedName = foundName;
+
+        statusBox.className = "office-status-box matched";
+        statusIcon.className = "fa-solid fa-circle-check";
+        statusSub.style.display = "block";
+        statusSub.textContent = `พบข้อมูลที่ทำการ (${currentSelectedCode}):`;
+        nameText.textContent = foundName;
+      } else {
+        // ค้นหา partial match ใน list
+        const match = officeDirectory.find(item => 
+          item.code.toLowerCase() === inputVal || 
+          item.name.toLowerCase() === inputVal
+        );
+
+        if (match) {
+          currentSelectedCode = match.code;
+          currentSelectedName = match.name;
+
+          statusBox.className = "office-status-box matched";
+          statusIcon.className = "fa-solid fa-circle-check";
+          statusSub.style.display = "block";
+          statusSub.textContent = `พบข้อมูลที่ทำการ (${currentSelectedCode}):`;
+          nameText.textContent = match.name;
+        } else {
+          // ไม่พบในระบบ แต่ยังให้ใช้รหัสที่คีย์ได้
+          currentSelectedCode = codeInput.value.trim();
+          currentSelectedName = "";
+
+          statusBox.className = "office-status-box not-found";
+          statusIcon.className = "fa-solid fa-circle-exclamation";
+          statusSub.style.display = "block";
+          statusSub.textContent = `สถานะรหัส "${codeInput.value}":`;
+          nameText.textContent = `ไม่พบในชีต "ที่ทำการ" (จะบันทึกด้วยรหัสนี้)`;
+        }
+      }
+
+      // อัปเดตทั้ง 2 การ์ดทันที
+      updateLinkedOfficeDisplay();
+
+      // ดึงข้อมูลเดิมมาแสดงในฟอร์มทันที
+      populateExistingDataForCode(currentSelectedCode);
+    }
+
+    /**
+     * อัปเดตป้ายชื่อที่ทำการบนการ์ดวันที่ 23 และ 30
+     */
+    function updateLinkedOfficeDisplay() {
+      const tag23 = document.getElementById("linkedOfficeName23");
+      const tag30 = document.getElementById("linkedOfficeName30");
+
+      if (currentSelectedCode) {
+        const displayText = currentSelectedName 
+          ? `${currentSelectedName} (${currentSelectedCode})`
+          : `รหัส: ${currentSelectedCode}`;
+
+        tag23.innerHTML = `<span style="color: #2563eb;">${displayText}</span>`;
+        tag30.innerHTML = `<span style="color: #059669;">${displayText}</span>`;
+      } else {
+        tag23.innerHTML = `<span style="color: #94a3b8; font-weight: normal;">ยังไม่ได้ระบุรหัสที่ทำการ (กรอกด้านบน)</span>`;
+        tag30.innerHTML = `<span style="color: #94a3b8; font-weight: normal;">ยังไม่ได้ระบุรหัสที่ทำการ (กรอกด้านบน)</span>`;
+      }
+    }
+
+    /**
+     * Stepper เพิ่ม/ลด คน
+     */
+    function stepCount(day, delta) {
+      if (!currentSelectedCode || !currentSelectedCode.trim()) {
+        promptFocusOfficeCode();
+        return;
+      }
+      const input = document.getElementById(`peopleCount${day}`);
+      let currentVal = parseInt(input.value) || 0;
+      currentVal = Math.max(0, currentVal + delta);
+      input.value = currentVal;
+      validateAndToggleSubmitButtons();
+    }
+
+    /**
+     * Quick Chip ตั้งค่าคน
+     */
+    function setCount(day, val) {
+      if (!currentSelectedCode || !currentSelectedCode.trim()) {
+        promptFocusOfficeCode();
+        return;
+      }
+      const input = document.getElementById(`peopleCount${day}`);
+      input.value = val;
+      validateAndToggleSubmitButtons();
+    }
+
+    /**
+     * ดึงข้อมูลสรุปยอดและประวัติล่าสุด
+     */
+    async function refreshSummary() {
+      try {
+        const res = await apiRequest("getSummary");
+        onSummaryLoaded(res);
+      } catch (err) {
+        console.error("Failed to load summary:", err);
+      }
+    }
+
+    function onSummaryLoaded(res) {
+      if (!res || !res.success || !res.summary) return;
+
+      cachedSummaryData = res.summary;
+
+      // วันที่ 23 (หรือ day22 เก่า)
+      const data23 = cachedSummaryData.day23 || cachedSummaryData.day22 || { totalPeople: 0, totalOffices: 0, recentList: [] };
+      document.getElementById("sumCount23").innerHTML = `${data23.totalPeople} <span style="font-size: 1rem; font-weight: normal; color: #64748b;">คน</span>`;
+      document.getElementById("recentCount23").innerHTML = `${data23.totalOffices} ที่ทำการ <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>`;
+      renderRecentList("23", data23.recentList, data23.totalOffices);
+
+      // วันที่ 30
+      if (cachedSummaryData.day30) {
+        document.getElementById("sumCount30").innerHTML = `${cachedSummaryData.day30.totalPeople} <span style="font-size: 1rem; font-weight: normal; color: #64748b;">คน</span>`;
+        document.getElementById("recentCount30").innerHTML = `${cachedSummaryData.day30.totalOffices} ที่ทำการ <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>`;
+        renderRecentList("30", cachedSummaryData.day30.recentList, cachedSummaryData.day30.totalOffices);
+      }
+
+      // หากมีรหัสที่เลือกอยู่แล้ว ให้ sync ข้อมูลเดิมใหม่
+      if (currentSelectedCode) {
+        populateExistingDataForCode(currentSelectedCode);
+      } else {
+        validateAndToggleSubmitButtons();
+      }
+    }
+
+    /**
+     * แสดงเฉพาะ 5 รายการล่าสุด พร้อมปุ่มกดดูข้อมูลทั้งหมด
+     */
+    function renderRecentList(day, list, totalCount = 0) {
+      const ul = document.getElementById(`recentList${day}`);
+      const footer = document.getElementById(`recentFooter${day}`);
+      if (!list || list.length === 0) {
+        ul.innerHTML = `<li class="recent-item" style="color: #94a3b8; justify-content: center;">ยังไม่มีข้อมูลการบันทึก</li>`;
+        if (footer) footer.innerHTML = "";
+        return;
+      }
+
+      // จำกัดให้แสดงเพียง 5 รายการล่าสุดเท่านั้น
+      const displayItems = list.slice(0, 5);
+
+      ul.innerHTML = displayItems.map(item => `
+        <li class="recent-item">
+          <div class="office-info">
+            <div class="office" title="${item.code} - ${item.name || item.code}">
+              <span class="recent-code-tag">${item.code}</span>
+              <span class="recent-office-name">${item.name || item.code}</span>
+            </div>
+            <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 2px;">${item.time}</div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+            <span class="count-badge">${item.count} คน</span>
+            <button type="button" class="btn-edit-inline" onclick="startEditOffice('${item.code}', '${day}')" title="แก้ไขข้อมูลนี้">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+          </div>
+        </li>
+      `).join("");
+
+      // แสดงปุ่ม "ดูข้อมูลทั้งหมด" เพื่อคลิกเปิด Popup
+      if (footer) {
+        footer.innerHTML = `
+          <button type="button" class="btn-view-all-recent" onclick="openDetailsPopup('${day}')">
+            <span><i class="fa-solid fa-table-list"></i> ดูข้อมูลทั้งหมด (${totalCount || list.length} ที่ทำการ)</span>
+            <span style="font-size: 0.76rem; display: flex; align-items: center; gap: 4px; opacity: 0.85;">
+              <span>คลิกดูทั้งหมด</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </button>
+        `;
+      }
+    }
+
+    /* ==================== Popup Modal Details Functions ==================== */
+    /**
+     * เปิด Popup แสดงรายละเอียดผู้ร่วมงานของวันที่ระบุ
+     */
+    function openDetailsPopup(day) {
+      activeModalDay = day;
+      const modalOverlay = document.getElementById("detailsModalOverlay");
+      const modalHeader = document.getElementById("modalHeader");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalSubTitle = document.getElementById("modalSubTitle");
+      const searchInput = document.getElementById("modalSearchInput");
+
+      searchInput.value = ""; // รีเซ็ตคำค้นหา
+
+      if (day === "23") {
+        modalHeader.className = "modal-header theme-23";
+        modalTitle.innerHTML = `<i class="fa-solid fa-champagne-glasses"></i> รายละเอียด: จัดงานเลี้ยงสังสรรค์ (23 ต.ค. 69)`;
+        modalSubTitle.textContent = `ข้อมูลการสำรวจผู้เข้าร่วมจัดงานเลี้ยงสังสรรค์ บันทึกลงชีต "23"`;
+      } else {
+        modalHeader.className = "modal-header theme-30";
+        modalTitle.innerHTML = `<i class="fa-solid fa-van-shuttle"></i> รายละเอียด: ร่วมเดินทางไปส่งฝ่ายที่ ปข.1 (30 ต.ค. 69)`;
+        modalSubTitle.textContent = `ข้อมูลการสำรวจผู้ร่วมเดินทาง บันทึกลงชีต "30"`;
+      }
+
+      renderModalTable();
+      modalOverlay.classList.add("active");
+    }
+
+    /**
+     * ปิด Popup
+     */
+    function closeDetailsPopup() {
+      const modalOverlay = document.getElementById("detailsModalOverlay");
+      modalOverlay.classList.remove("active");
+    }
+
+    function handleModalOverlayClick(e) {
+      if (e.target.id === "detailsModalOverlay") {
+        closeDetailsPopup();
+      }
+    }
+
+    /**
+     * Render ตารางใน Popup
+     */
+    function renderModalTable(filterText = "") {
+      const dayData = cachedSummaryData["day" + activeModalDay] || cachedSummaryData["day22"] || { totalPeople: 0, totalOffices: 0, allList: [] };
+      const allList = dayData.allList || [];
+
+      document.getElementById("modalStatTotalPeople").textContent = dayData.totalPeople || 0;
+      document.getElementById("modalStatTotalOffices").textContent = dayData.totalOffices || 0;
+
+      const tbody = document.getElementById("modalTableBody");
+      const emptyState = document.getElementById("modalEmptyState");
+
+      // กรองตามคำค้นหา (ถ้ามี)
+      const term = filterText.trim().toLowerCase();
+      const filtered = term 
+        ? allList.filter(item => 
+            (item.code && item.code.toLowerCase().includes(term)) || 
+            (item.name && item.name.toLowerCase().includes(term)) ||
+            (item.note && item.note.toLowerCase().includes(term))
+          )
+        : allList;
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = "";
+        emptyState.style.display = "block";
+        return;
+      }
+
+      emptyState.style.display = "none";
+      const badgeClass = activeModalDay === "23" ? "badge-count-23" : "badge-count-30";
+
+      tbody.innerHTML = filtered.map((item, index) => `
+        <tr>
+          <td style="text-align: center; color: #94a3b8; font-weight: 500;">${index + 1}</td>
+          <td><strong style="color: #334155;">${item.code}</strong></td>
+          <td style="font-weight: 600; color: #0f172a;">${item.name || item.code}</td>
+          <td style="text-align: center;">
+            <span class="badge-count-pill ${badgeClass}">
+              ${item.count} คน
+            </span>
+          </td>
+          <td style="color: #334155; font-size: 0.85rem; font-weight: 500;">${item.note || '-'}</td>
+          <td style="text-align: right; color: #94a3b8; font-size: 0.8rem;">${item.time}</td>
+          <td style="text-align: center;">
+            <button type="button" class="btn-edit-row" onclick="startEditOffice('${item.code}', '${activeModalDay}')">
+              <i class="fa-solid fa-pen-to-square"></i> แก้ไข
+            </button>
+          </td>
+        </tr>
+      `).join("");
+    }
+
+    function filterModalTable() {
+      const text = document.getElementById("modalSearchInput").value;
+      renderModalTable(text);
+    }
+
+    /**
+     * เริ่มต้นแก้ไขข้อมูลของที่ทำการที่เลือก (ทำงานได้ทั้งจาก Popup และจากแถบ Recent List)
+     */
+    function startEditOffice(code, targetDay) {
+      closeDetailsPopup();
+
+      const globalCodeInput = document.getElementById("globalOfficeCode");
+      globalCodeInput.value = code;
+      handleGlobalOfficeInput();
+
+      // เลื่อนหน้าจอไปที่การ์ดของวันนั้นๆ พร้อมเอฟเฟกต์ไฮไลต์
+      setTimeout(() => {
+        const targetCard = document.getElementById(`cardContainer${targetDay}`);
+        if (targetCard) {
+          targetCard.scrollIntoView({ behavior: "smooth", block: "center" });
+          targetCard.classList.remove("pulse-highlight");
+          void targetCard.offsetWidth; // trigger reflow
+          targetCard.classList.add("pulse-highlight");
+        }
+      }, 250);
+    }
+
+    // กด Esc เพื่อปิด Popup
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeDetailsPopup();
+      }
+    });
+
+    /**
+     * ส่งข้อมูลบันทึกแบบเดี่ยว (เฉพาะวันที่ 23 หรือ 30)
+     */
+    function handleFormSubmit(event, day) {
+      event.preventDefault();
+
+      const globalCodeInput = document.getElementById("globalOfficeCode");
+      const code = currentSelectedCode || globalCodeInput.value.trim();
+
+      if (!code) {
+        Swal.fire({
+          icon: "warning",
+          title: "ยังไม่ได้ระบุรหัสที่ทำการ",
+          text: "กรุณากรอกรหัสที่ทำการในกล่องด้านบนก่อนกดบันทึก",
+          confirmButtonColor: "#2563eb"
+        }).then(() => {
+          globalCodeInput.focus();
+        });
+        return;
+      }
+
+      const peopleInput = document.getElementById(`peopleCount${day}`);
+      const btnSubmit = document.getElementById(`btnSubmit${day}`);
+      const count = parseInt(peopleInput.value) || 0;
+      const note = (day === "30") ? getNoteValue30() : document.getElementById("note23").value.trim();
+      const officeName = currentSelectedName || officeMap.get(code.toLowerCase()) || "";
+      const eventName = (day === "23") ? "จัดงานเลี้ยงสังสรรค์ (23 ต.ค. 69)" : "ร่วมเดินทางไปส่งฝ่ายที่ ปข.1 (30 ต.ค. 69)";
+
+      // ตรวจสอบข้อมูลจำเป็นของวันที่ 30 (หมายเหตุการเดินทาง) เฉพาะเมื่อจำนวนคน > 0
+      if (day === "30" && count > 0 && !selectedTravel30) {
+        const grid = document.getElementById("travelChoicesGrid");
+        if (grid) {
+          grid.classList.remove("has-error");
+          void grid.offsetWidth; // trigger reflow
+          grid.classList.add("has-error");
+          grid.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+        Swal.fire({
+          icon: "warning",
+          title: "กรุณาระบุข้อมูลการเดินทาง",
+          html: `
+            <div style="font-size: 0.95rem; text-align: left; background: #fff5f5; border-left: 4px solid #ef4444; padding: 12px; border-radius: 8px; color: #7f1d1d;">
+              <strong>ข้อมูลนี้เป็นข้อมูลจำเป็น (ร่วมเดินทางไปส่งฝ่ายที่ ปข.1 - 30 ต.ค. 69):</strong><br>
+              โปรดเลือกรูปแบบการเดินทางอย่างน้อย 1 รายการ
+              <ul style="margin: 8px 0 0 18px; line-height: 1.6; color: #334155;">
+                <li>1. เดินทางไปกับรถสำนักงาน ปข.10 (ค่าใช้จ่าย 800 บาท/คน)</li>
+                <li>2. เดินทางไปกับรถโซน สกลนคร นครพนม มุกดาหาร</li>
+              </ul>
+            </div>
+          `,
+          confirmButtonText: "ตกลง ไปเลือกการเดินทาง",
+          confirmButtonColor: "#059669"
+        });
+        return;
+      }
+
+      // ตรวจสอบว่าเคยมีข้อมูลเดิมในระบบหรือไม่
+      const existingList = cachedSummaryData["day" + day]?.allList || cachedSummaryData["day22"]?.allList || [];
+      const hasExisting = existingList.some(r => String(r.code).trim().toLowerCase() === code.toLowerCase());
+
+      // กรณีระบุ 0 คน และไม่มีข้อมูลเดิมในระบบ
+      if (count === 0 && !hasExisting) {
+        Swal.fire({
+          icon: "info",
+          title: "จำนวนคนเป็น 0",
+          text: `ยังไม่มีประวัติการบันทึกของ ${officeName || code} ใน${eventName} และระบุเป็น 0 คน จึงไม่มีข้อมูลที่จะต้องบันทึก`,
+          confirmButtonColor: day === "23" ? "#2563eb" : "#059669"
+        });
+        return;
+      }
+
+      // กรณีระบุ 0 คน และมีข้อมูลเดิมอยู่แล้ว -> ยืนยันการลบรายการเดิม
+      if (count === 0 && hasExisting) {
+        Swal.fire({
+          title: "ยืนยันลบข้อมูล?",
+          html: `
+            <div style="text-align: left; background: #fef2f2; padding: 12px; border-radius: 10px; border-left: 4px solid #ef4444; font-size: 0.95rem;">
+              <div>🏢 <strong>ที่ทำการ:</strong> ${officeName ? `${officeName} (${code})` : code}</div>
+              <div style="margin-top: 4px;">📅 <strong>งาน:</strong> ${eventName}</div>
+              <div style="margin-top: 6px; color: #dc2626;">คุณระบุจำนวนคนเป็น <strong>0 คน</strong> ระบบจะทำการ<strong>ลบรายการเดิม</strong>ออกจากชีต "${day}"</div>
+            </div>
+          `,
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonText: "ยืนยันลบรายการ",
+          cancelButtonText: "ยกเลิก",
+          confirmButtonColor: "#ef4444"
+        }).then(res => {
+          if (res.isConfirmed) {
+            submitSingleSurvey();
+          }
+        });
+        return;
+      }
+
+      submitSingleSurvey();
+
+      async function submitSingleSurvey() {
+        // ปรับปุ่มเป็นสถานะโหลด
+        const originalBtnHtml = btnSubmit.innerHTML;
+        btnSubmit.disabled = true;
+        btnSubmit.innerHTML = `<span class="spinner"></span> กำลังประมวลผล...`;
+
+        const payload = {
+          targetDate: day,
+          officeCode: code,
+          officeName: officeName,
+          peopleCount: count,
+          note: note
+        };
+
+        try {
+          const result = await apiRequest("saveSubmission", payload);
+          btnSubmit.disabled = false;
+          btnSubmit.innerHTML = originalBtnHtml;
+
+          if (result && result.success) {
+            if (result.deleted) {
+              Swal.fire({
+                icon: "success",
+                title: "ลบรายการสำเร็จ!",
+                html: `
+                  <div style="font-size: 0.95rem; margin-top: 8px; text-align: left; background: #fff5f5; padding: 12px; border-radius: 10px; border-left: 4px solid #ef4444;">
+                    <div><strong>งาน:</strong> ${eventName}</div>
+                    <div style="margin-top: 4px;"><strong>ที่ทำการ:</strong> ${officeName ? `${officeName} (${code})` : code}</div>
+                    <div style="margin-top: 6px; color: #dc2626; font-size: 0.9rem;">
+                      <i class="fa-solid fa-trash-can"></i> ลบรายการออกจากชีต "${day}" เรียบร้อยแล้ว เนื่องจากระบุผู้ร่วมงานเป็น 0 คน
+                    </div>
+                  </div>
+                `,
+                confirmButtonColor: "#ef4444"
+              });
+            } else if (result.noChange) {
+              Swal.fire({
+                icon: "info",
+                title: "ไม่มีการบันทึก",
+                text: result.message || "จำนวนคนเป็น 0 และไม่มีข้อมูลเดิมในระบบ",
+                confirmButtonColor: "#64748b"
+              });
+            } else {
+              const isUpdate = result.updatedExisting;
+              Swal.fire({
+                icon: "success",
+                title: isUpdate ? "อัปเดตข้อมูลสำเร็จ!" : "บันทึกสำเร็จ!",
+                html: `
+                  <div style="font-size: 0.95rem; margin-top: 8px; text-align: left; background: #f8fafc; padding: 12px; border-radius: 10px;">
+                    <div><strong>งาน:</strong> ${eventName}</div>
+                    <div style="margin-top: 4px;"><strong>ที่ทำการ:</strong> ${officeName ? `${officeName} (${code})` : code}</div>
+                    <div style="margin-top: 4px;"><strong>จำนวนคน:</strong> <span style="font-size: 1.25rem; color: #059669; font-weight: bold;">${count}</span> คน</div>
+                    ${note ? `<div style="margin-top: 4px;"><strong>หมายเหตุ:</strong> ${note}</div>` : ''}
+                    ${isUpdate ? '<div style="margin-top: 6px; color: #d97706; font-size: 0.85rem;"><i class="fa-solid fa-pen-to-square"></i> บันทึกทับข้อมูลเดิมของที่ทำการนี้เรียบร้อย</div>' : ''}
+                  </div>
+                `,
+                confirmButtonColor: day === "23" ? "#2563eb" : "#059669"
+              });
+            }
+
+            refreshSummary();
+          } else {
+            Swal.fire({
+              icon: "error",
+              title: "บันทึกไม่สำเร็จ",
+              text: result?.message || "เกิดข้อผิดพลาดในการบันทึกข้อมูล",
+              confirmButtonColor: "#ef4444"
+            });
+          }
+        } catch (err) {
+          btnSubmit.disabled = false;
+          btnSubmit.innerHTML = originalBtnHtml;
+          Swal.fire({
+            icon: "error",
+            title: "เกิดข้อผิดพลาดในการเชื่อมต่อ",
+            text: err.toString(),
+            confirmButtonColor: "#ef4444"
+          });
+        }
+      }
+    }
+
+    /**
+     * บันทึกข้อมูลทั้ง 2 วันพร้อมกันในคลิกเดียว
+     */
+    function saveBothDays() {
+      const globalCodeInput = document.getElementById("globalOfficeCode");
+      const code = currentSelectedCode || globalCodeInput.value.trim();
+
+      if (!code) {
+        Swal.fire({
+          icon: "warning",
+          title: "ยังไม่ได้ระบุรหัสที่ทำการ",
+          text: "กรุณากรอกรหัสที่ทำการในกล่องด้านบนก่อนกดบันทึก",
+          confirmButtonColor: "#2563eb"
+        }).then(() => {
+          globalCodeInput.focus();
+        });
+        return;
+      }
+
+      const count23 = parseInt(document.getElementById("peopleCount23").value) || 0;
+      const count30 = parseInt(document.getElementById("peopleCount30").value) || 0;
+      const note23 = document.getElementById("note23").value.trim();
+      const note30 = getNoteValue30();
+      const officeName = currentSelectedName || officeMap.get(code.toLowerCase()) || "";
+
+      // ตรวจสอบข้อมูลจำเป็นของวันที่ 30 (เฉพาะเมื่อมีจำนวนคนมากกว่า 0)
+      if (count30 > 0 && !selectedTravel30) {
+        const grid = document.getElementById("travelChoicesGrid");
+        if (grid) {
+          grid.classList.remove("has-error");
+          void grid.offsetWidth; // trigger reflow
+          grid.classList.add("has-error");
+          grid.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+        Swal.fire({
+          icon: "warning",
+          title: "ยังไม่ได้เลือกการเดินทาง (ไปส่งฝ่ายที่ ปข.1)",
+          html: `
+            <div style="font-size: 0.95rem; text-align: left; background: #fff5f5; border-left: 4px solid #ef4444; padding: 12px; border-radius: 8px; color: #7f1d1d;">
+              <strong>หมายเหตุ (การเดินทาง) เป็นข้อมูลจำเป็นสำหรับงานไปส่งฝ่ายที่ ปข.1 (30 ต.ค. 69):</strong><br>
+              โปรดเลือกรูปแบบการเดินทางในการ์ดก่อนกดบันทึกทั้งสองงาน
+              <ul style="margin: 8px 0 0 18px; line-height: 1.6; color: #334155;">
+                <li>1. เดินทางไปกับรถสำนักงาน ปข.10 (ค่าใช้จ่าย 800 บาท/คน)</li>
+                <li>2. เดินทางไปกับรถโซน สกลนคร นครพนม มุกดาหาร</li>
+              </ul>
+            </div>
+          `,
+          confirmButtonText: "ตกลง ไปเลือกการเดินทาง",
+          confirmButtonColor: "#059669"
+        });
+        return;
+      }
+
+      Swal.fire({
+        title: "ยืนยันบันทึกทั้ง 2 งานพร้อมกัน?",
+        html: `
+          <div style="text-align: left; background: #f8fafc; padding: 14px; border-radius: 10px; margin-top: 10px; font-size: 0.95rem;">
+            <div>🏢 <strong>ที่ทำการ:</strong> ${officeName ? `${officeName} (${code})` : code}</div>
+            <div style="margin-top: 6px;">🔵 <strong>จัดงานเลี้ยงสังสรรค์ (23 ต.ค. 69):</strong> ${count23} คน ${note23 ? `(${note23})` : ''}</div>
+            <div style="margin-top: 4px;">🟢 <strong>ร่วมเดินทางไปส่งฝ่ายที่ ปข.1 (30 ต.ค. 69):</strong> ${count30} คน ${note30 ? `<br><small style="color: #059669;">↳ ${note30}</small>` : ''}</div>
+          </div>
+        `,
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonText: "ยืนยันบันทึกทั้ง 2 งาน",
+        cancelButtonText: "ยกเลิก",
+        confirmButtonColor: "#0f172a"
+      }).then(async result => {
+        if (!result.isConfirmed) return;
+
+        Swal.fire({
+          title: "กำลังบันทึกข้อมูล...",
+          allowOutsideClick: false,
+          didOpen: () => {
+            Swal.showLoading();
+          }
+        });
+
+        const p23 = { targetDate: "23", officeCode: code, officeName: officeName, peopleCount: count23, note: note23 };
+        const p30 = { targetDate: "30", officeCode: code, officeName: officeName, peopleCount: count30, note: note30 };
+
+        try {
+          const res23 = await apiRequest("saveSubmission", p23);
+          const res30 = await apiRequest("saveSubmission", p30);
+
+          if (res23 && res23.success && res30 && res30.success) {
+            Swal.fire({
+              icon: "success",
+              title: "บันทึกทั้ง 2 งานสำเร็จ!",
+              text: `บันทึกข้อมูล ${officeName || code} (จัดงานเลี้ยงสังสรรค์: ${count23} คน, ไปส่งฝ่าย: ${count30} คน) เรียบร้อย`,
+              confirmButtonColor: "#2563eb"
+            });
+            refreshSummary();
+          } else {
+            Swal.fire({
+              icon: "warning",
+              title: "การบันทึกอาจมีข้อผิดพลาดบางส่วน",
+              html: `
+                <div style="font-size: 0.9rem; text-align: left;">
+                  <div>จัดงานเลี้ยงสังสรรค์ (23 ต.ค. 69): ${res23?.message || (res23?.success ? 'สำเร็จ' : 'ล้มเหลว')}</div>
+                  <div style="margin-top: 4px;">ร่วมเดินทางไปส่งฝ่ายที่ ปข.1 (30 ต.ค. 69): ${res30?.message || (res30?.success ? 'สำเร็จ' : 'ล้มเหลว')}</div>
+                </div>
+              `,
+              confirmButtonColor: "#ef4444"
+            });
+            refreshSummary();
+          }
+        } catch (err) {
+          Swal.fire({
+            icon: "error",
+            title: "เกิดข้อผิดพลาดในการบันทึก",
+            text: err.toString(),
+            confirmButtonColor: "#ef4444"
+          });
+        }
+
+      });
+    }
+  </script>
+</body>
+</html>
